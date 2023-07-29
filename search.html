@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/search.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!---ICONS-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css' rel='stylesheet'>
+</head>
+<body>
+    
+  
+    <!----------HEADER----->
+    <header id="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+     
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.php">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div  class="nav-icon">
+        <div id="search_text" class="search">
+          <input type="text"  placeholder="Search">
+        </div>
+        <a><i id="searchbtn" class="gg-search"></i></a>
+        <a id="iconBag" class="icons" href="cart.html"><i class="gg-shopping-bag"></i></a>
+        <a id="iconProfile" class="icons"><i  onclick="poplogin()" class="gg-profile"></i></a>
+        <div  id="menu-icon">
+          <i  class="gg-menu"></i>
+        </div>
+      
+      </div>
+    </header>
+  <div id="blur">
+    <div id="filter">
+        <div id="filter2">
+    <!---HEADER BANNER--->
+    <div onclick="scrollUp()"  id="scroll-up">
+      <a><i class="gg-chevron-up"></i></a>
+    </div> 
+
+    </div>
+
+    <section class="container">
+        <form>
+            <i class="gg-search"></i>
+            <input type="text" name="" id="search-item" placeholder="Search Products"
+            onkeyup="search_products()">
+        </form>
+        <div class="product-list" id="product-list">
+            <div class="product" >
+            <img src="img/products/f1.jpg" >
+            <div class="p-details">
+              <h2>Happy T-Shirt</h2>
+              <h3>$30</h3>
+            </div>
+            </div>
+          
+          <div class="product">
+            <img src="img/products/f2.jpg" alt="">
+            <div class="p-details">
+              <h2> Ocean T-Shirt</h2>
+              <h3>$35</h3>
+            </div>
+            </div>
+          
+          <div class="product">
+            <img src="img/products/f3.jpg" alt="">
+            <div class="p-details">
+              <h2>Cartoon  T-Shirt</h2>
+              <h3>$40</h3>
+            </div>
+            </div>
+          
+          <div class="product">
+            <img src="img/products/f4.jpg" alt="">
+            <div class="p-details">
+              <h2>I'm in japan T-Shirt</h2>
+              <h3>$30</h3>
+            </div>
+            </div>
+          
+          <div class="product">
+            <img src="img/products/f5.jpg" alt="">
+            <div class="p-details">
+              <h2>Roses T-Shirt</h2>
+              <h3>$45</h3>
+            </div>
+            </div>
+          
+          <div class="product">
+            <img src="img/products/f6.jpg" alt="">
+            <div class="p-details">
+              <h2>kotopulo jacket</h2>
+              <h3>$40</h3>
+            </div>
+            </div>
+          
+          <div class="product">
+            <img src="img/products/f7.jpg" alt="">
+            <div class="p-details">
+              <h2>kotopulo pants</h2>
+              <h3>$35</h3>
+            </div>
+            </div>
+          
+          
+          <div class="product">
+            <img src="img/products/f8.jpg" alt="">
+            <div class="p-details">
+              <h2>C7 Shirt</h2>
+              <h3>$50</h3>
+            </div>
+            </div>
+            <div class="product">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="p-details">
+                  <h2>Light Blue Shirt</h2>
+                  <h3>$30</h3>
+                </div>
+                </div>
+              
+              <div class="product">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="p-details">
+                  <h2>Grey Shirt</h2>
+                  <h3>$35</h3>
+                </div>
+                </div>
+              
+              <div class="product">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="p-details">
+                  <h2>White Shirt</h2>
+                  <h3>$40</h3>
+                </div>
+                </div>
+              
+              <div class="product">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="p-details">
+                  <h2>Kotopulo T-Shirt</h2>
+                  <h3>$30</h3>
+                </div>
+                </div>
+              
+              <div class="product">
+                <img src="img/products/n5.jpg" alt="">
+                <div class="p-details">
+                  <h2>Blue Shirt</h2>
+                  <h3>$45</h3>
+                </div>
+                </div>
+              
+              <div class="product">
+                <img src="img/products/n6.jpg" alt="">
+                <div class="p-details">
+                  <h2>Gray Shorts</h2>
+                  <h3>$40</h3>
+                </div>
+                </div>
+              
+              <div class="product">
+                <img src="img/products/n7.jpg" alt="">
+                <div class="p-details">
+                  <h2>Brown Shirt</h2>
+                  <h3>$35</h3>
+                </div>
+                </div>
+              
+              
+              <div class="product">
+                <img src="img/products/n8.jpg" alt="">
+                <div class="p-details">
+                  <h2>Black Shirt</h2>
+                  <h3>$50</h3>
+                </div>
+                </div>          
+         
+        </div>
+    </section>
+    <section id="login">
+      <h1>Login</h1>
+      <form action="login.php" method="post" id="login_form">
+          <div class="text_field">
+              <input type="text" name="email"  required > <span></span> <label>Email</label>
+          </div>
+          <div class="text_field">
+              <input type="password" name ="login_password" id ="login_password" required><span></span> <label>Password</label>
+              <a><i onclick="login_pass()" class="fa-solid fa-eye" id="login_pass"></i></a>
+          </div>
+          <div id="status_login"></div>
+          <input type="submit" id="submit_login" value="Login">
+          <div class="signup_link">
+              Not a member? <a onclick="popsign()">Sign up</a>
+              
+          </div>
+      </form>
+      <script>
+  
+        $("#submit_login").click( function() {
+        
+          $.post( $("#login_form").attr("action"),
+                  $("#login_form :input").serializeArray(),
+              function (info) {
+        
+               
+                $("#response").empty();
+                $("#response").html(info);
+                check_av1();  
+               
+              });
+        
+          $("#login_form").submit( function() {
+            return false;  
+          });
+        });
+       
+       function check_av1(){
+        var element = document.getElementById('response');
+        var status = document.getElementById('status_login');
+        var text = element.innerText || element.textContent;
+        element.innerHTML = text;
+        var status_text = status.innerText || status.textContent;
+        status.innerHTML = status_text;
+        
+        if (text=="login"){
+          localStorage.setItem("text",text);
+          location.reload();
+  
+        }
+        else{
+          status.innerHTML="*email or password wrong*";
+          localStorage.removeItem("text",text);
+        }
+       } 
+  
+        </script>
+    </section> 
+    <section id="signup">
+      <h1>Sign up</h1>
+      <form  action="signup.php" method="post" id="signup_form"  >
+          <div class="text_field" id="name" >
+              <input type="text" name="username" id ="username"  required > <span></span> <label>Username</label>
+          </div>
+          <div class="text_field" id="pass" >
+              <input type="password" name="password" id ="signup_password" required><span></span> <label>Password</label>
+              <a><i onclick="signup_pass()" class="fa-solid fa-eye" id="signup_pass"></i></a>
+          </div>
+          
+          <div class="text_field" id="mail">
+              <input type="text" name="email" id="email" required > <span></span> <label>Email</label>
+          </div>
+          <div id="email_error"></div>
+          
+          <div class="text_field" id="phone">
+              
+              <input type="numbers" name="number" id ="phone_number" required  > <span></span> <label>Phone number </label>
+          </div>
+          <div id="phone_error"></div>
+          <div class="text_field1" id="date">
+              <input type="date" name="date" id="day" required > <span></span> <label>Date of birth</label>
+          </div>
+          <div id="date_error">Please enter a valid date</div>
+          <div class="text_field">
+          <select name="sex" >
+              <option selected disabled>Select a gender</option>
+              <option  value="male" >Male</option>
+              <option value="famele" >Famale</option>
+          </select>
+     
+          </div>
+          <input type="submit" value="Sign up" id="submit_signup" disabled />
+          <div class="signup_link">
+              You are a member? <a onclick="poplogin()">Login</a>
+          </div>
+          
+      </form>
+     
+  
+      
+  <script>
+  
+            $("#submit_signup").click( function() {
+            
+              $.post( $("#signup_form").attr("action"),
+                      $("#signup_form :input").serializeArray(),
+                  function (info) {
+            
+                   
+                    $("#response").empty();
+                    $("#response").html(info);
+                    check_av2()
+                   
+                  });
+            
+              $("#signup_form").submit( function() {
+                return false;  
+              });
+            });
+            
+  
+  
+    function check_av2(){
+    /*email infos*/
+    let email = document.getElementById("email");
+    var email_error= document.getElementById("email_error");
+    var mail1= document.head.appendChild(document.createElement("style"));
+    var mail2= document.head.appendChild(document.createElement("style"));  
+    var element = document.getElementById('response');
+    var text = element.innerText || element.textContent;
+    element.innerHTML = text;
+    var email_text = email_error.innerText || email_error.textContent;
+    email_error.innerHTML = email_text;
+    /*phone infos*/
+    let phone_number = document.getElementById("phone_number");
+    var phone_error= document.getElementById("phone_error");
+    var phone1= document.head.appendChild(document.createElement("style"));
+    var phone2= document.head.appendChild(document.createElement("style"));
+    var phone_text = phone_error.innerText || phone_error.textContent;
+    phone_error.innerHTML = phone_text; 
+   
+  
+    if (text=="email"){
+      email_error.style.display="block";
+      mail1.innerHTML="#mail span::before {background: brown;}";
+      mail2.innerHTML="#mail input:valid ~ label, #mail input:focus ~ label  {color: brown;}";
+      email_error.innerHTML="This email address has been used already";
+    }
+    if (text=="phone"){
+      phone_error.innerHTML="This phone number has been used already";
+      phone1.innerHTML="#phone span::before {background: brown;}";
+      phone2.innerHTML="#phone input:valid ~ label, #mail input:focus ~ label  {color: brown;}";
+      phone_error.style.display="block";
+  
+    }
+    else if(text=="emailphone"){
+      /*email*/
+      email_error.style.display="block";
+      mail1.innerHTML="#mail span::before {background: brown;}";
+      mail2.innerHTML="#mail input:valid ~ label, #mail input:focus ~ label  {color: brown;}";
+      email_error.innerHTML="This email address has been used already";
+      /*phone*/
+      phone_error.innerHTML="This phone number has been used already";
+      phone1.innerHTML="#phone span::before {background: brown;}";
+      phone2.innerHTML="#phone input:valid ~ label, #mail input:focus ~ label  {color: brown;}";
+      phone_error.style.display="block";
+  
+    }
+    else if(text=="true"){
+      location.reload();
+  }
+      
+  }
+  
+  </script>
+  
+  
+  
+  </section> 
+</div>
+</div>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

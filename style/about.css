@@ -1,0 +1,123 @@
+/*About*/
+#banner.about-banner{
+    background-image: url(../img/banner/About-banner.jpg);
+    min-height: 35vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+}
+#banner p{
+    color: #000;
+}
+#banner h2{
+    color: #000;
+}
+
+.info-about img{
+    height: auto;
+    width: 40%;
+    border-radius: 10px;
+
+
+}
+.info-about{
+    display: flex;
+    align-items: self-start;
+    padding-top:30px ;
+    margin-left: 30px;
+}
+
+.More{
+    margin: 30px 60px;
+    padding-left: 60px;
+}
+.More h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.More p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin-top: 30px;
+}
+#about-app .video video{
+    height: 100%;
+    width: 70%;
+    border-radius: 20px;
+    margin-left: 35%;
+}
+
+
+
+@media(max-width:1000px){
+    #banner.about-banner{
+        min-height: 20vh;
+        margin: 0;
+        
+    }
+    #banner h2{
+        font-size: 25px;
+    }
+    .info-about img{
+        height: auto;
+        width: 50%;
+        border-radius: 10px;
+    
+    
+    }
+    .info-about{
+        text-align: center;
+        display: block;
+        padding: 20px  0px;
+        position: relative;
+    }
+    
+    .More{
+        padding-left: 0px;
+    }
+    .More h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .More p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    
+    #about-app{
+        text-align: center;
+    }
+    
+    #about-app .video{
+        width: 70%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    #about-app .video video{
+        height: 100%;
+        width: 70%;
+        border-radius: 20px;
+        margin-left: 35%;
+    }
+    
+    
+        
+                
+        
+}

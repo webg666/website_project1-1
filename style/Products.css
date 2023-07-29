@@ -1,0 +1,130 @@
+/*-----------------SHOP PAGE--------------------*/
+#shop-banner{
+    background-image: url(../img/banner/Shop_banner.png);
+    width:100%;
+    display: flex;
+    min-height: 35vh;
+    font-size: 27px;
+    color: #6C1919;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+
+
+  /*Shop Content */
+
+#product_btn{
+  background-color: transparent;
+}
+
+  .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.colum {
+    margin:30px 2% 30px 2%;
+    transition: transform 0.4s;
+    
+  }
+  .colum img {
+    width: 230px;
+    border-radius: 15px;
+    /* border: radius 20px; */
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+  }
+  .title::after {
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h4 {
+    color: #555;
+    font-weight: normal;
+  }
+  .colum p {
+    font-size: 17px;
+  }
+  .colum:hover {
+    transform: translateY(-30px);
+  }
+
+
+
+
+
+  
+  
+
+  /*SHOP-RESPONSIVE*/
+  @media(max-width:1000px){
+    #shop-banner{
+        width:100%;
+        display: flex;
+        min-height: 30vh;
+        padding: 0px 0px;
+        font-size: 18px;
+        color: #6C1919;
+        background-position: 10%;
+        align-items: center;
+        
+        
+        
+        
+      }
+      #shop-banner h1{
+        padding-left: 50%;
+        margin-right: 5%;
+        text-align: center;
+        margin-left: 0px;
+        
+      }
+      
+      
+
+}
+
+@media(max-width:480px){
+    #shop-banner{
+        width:100%;
+        display: flex;
+        min-height: 30vh;
+        padding: 0px 0px;
+        font-size: 15px;
+        color: #6C1919;
+        background-position: 10%;
+        align-items: center;
+        
+        
+        
+        
+      }
+      #shop-banner h1{
+        padding-left: 50%;
+        margin-right: 5%;
+        text-align: center;
+        margin-left: 0px;
+        
+      }
+      
+      
+
+}

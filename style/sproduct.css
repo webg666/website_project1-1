@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+ * {
+	 box-sizing: border-box;
+}
+ *::before, *::after {
+	 box-sizing: border-box;
+}
+
+nav ol{
+	list-style: none;
+}
+
+nav a{
+	color: rgb(117, 115, 115);
+	text-decoration: none;
+}
+
+.breadcrumb {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+#error{
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	border-bottom: 1px solid silver;
+}
+#product_btn{
+	background-color: transparent;
+}
+
+.breadcrumb-content{
+	display: flex;
+	width: 100%;
+	height: 50px;
+	padding: 30px 40px ;
+	font-size: 18px;
+}
+
+.breadcrumb-item a{
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+	color: black;
+}
+.breadcrumb-item a:after{
+	content: "/";
+	margin-left: 15px;
+}
+
+.breadcrumb-item-active a{
+	color: black;
+}
+
+ body {
+	 font-family: 'Pontano Sans', sans-serif;
+	 font-size: 1.125rem;
+	 line-height: 1.5;
+	 margin: 0;
+	 padding: 0;
+	 color: #888;
+	 background: #fff;
+	 text-rendering: optimizeLegibility;
+}
+
+
+ h1, h2, h3, h4 {
+	 color: #333;
+	 font-weight: normal;
+}
+ h1 {
+	 font-size: 2.5rem;
+}
+ h2 {
+	 font-size: 2.125rem;
+	 margin: 0;
+}
+ h3 {
+	 font-size: 2rem;
+}
+ h4 {
+	 font-size: 1.5rem;
+	
+}
+
+
+
+
+
+
+.group {
+    display: flex;
+	justify-content: center;
+
+}
+.group img{
+	width: 100px;
+	margin: 10px;
+	border-radius:20px ;
+}
+
+
+
+
+
+
+
+
+
+.info p{
+    width: 80%;
+	
+}
+.info{
+	margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+ .description {
+	 border-top: 0.0625rem solid #e3dddd;
+	 margin: 2rem 0;
+	 padding: 1rem 0 0 0;
+}
+ .add-to-cart {
+    width: 240px;
+	 position: relative;
+	 display: inline-block;
+	 background: #3e3e3f;
+	 color: #fff;
+	 border: none;
+	 border-radius: 0;
+	 padding: 1.25rem 2.5rem;
+	 font-size: 1rem;
+	 text-transform: uppercase;
+	 cursor: pointer;
+	 transform: translateZ(0);
+	 transition: color 0.3s ease;
+	 letter-spacing: 0.0625rem;
+}
+ .add-to-cart:hover::before {
+	 transform: scaleX(1);
+}
+ .add-to-cart::before {
+	 position: absolute;
+	 content: '';
+	 z-index: -1;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 background: #565657;
+	 transform: scaleX(0);
+	 transform-origin: 0 50%;
+	 transition: transform 0.3s ease-out;
+}
+
+
+
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	border-bottom:1px solid silver ;
+	padding: 5%;
+	flex-wrap: wrap;
+
+
+  
+}
+
+.front-image img{
+	border-radius: 0px;
+}
+ 
+.gridproduct{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+}
+ 
+
+
+
+.row{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.small-container{
+    margin-top: 100px;
+}
+
+.colum {
+	margin: 20px 5% 20px 5%;
+    transition: transform 0.4s;
+  }
+  .colum img {
+    width: 230px;
+    border-radius: 14%;
+    /* border: radius 20px; */
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+  }
+  .title::after {
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h4 {
+    color: #555;
+    font-weight: normal;
+  }
+  .colum p {
+    font-size: 17px;
+  }
+  .colum:hover {
+    transform: translateY(-30px);
+  }

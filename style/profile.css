@@ -1,0 +1,358 @@
+
+#profile{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+#profile h4{
+    margin-left: 10px;
+
+}
+#profile button{
+    display: flex;
+    margin: 10px;
+    background-color: black;
+    transition: .4s;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+
+    
+}
+#profile button:hover{
+    color: bisque;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+    transition: .4s;
+    
+}
+
+#profile #content{
+    display: block;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    padding: 5%;
+    
+ 
+
+}
+#profile #content h2 {
+    margin-bottom:   50px ;
+    font-size: 25px;
+}
+
+
+#username {
+    padding:   20px ;
+    border-bottom:1px solid silver ;
+
+
+}
+#content a {
+    color:rgb(95, 95, 95);
+    font-weight: 5;
+    
+    
+
+    
+}
+
+
+
+#icon{
+    padding-right: 5px;
+    color: white;
+    font-size: 16px;
+ 
+}
+
+/*orders*/
+
+#orders{
+    display: none;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    padding: 5%;
+    
+}
+
+#profile #orders h2 {
+    margin-bottom:   50px ;
+    font-size: 25px;
+}
+
+#ord_content {
+
+    justify-content: center;
+}
+#ord_content h3{
+    display: flex;
+    justify-content: center;
+}
+#ord_content span{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(58, 57, 57);
+    margin: 5px 0px 20px 10px;
+}
+
+
+#shop_now a{
+    color: aliceblue;
+    background-color:black;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 42% 0px 42%;
+    border-radius: 5px;
+    transition: .4s all;
+    
+}
+#shop_now a:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: .4s all;
+
+}
+
+
+#settings{
+    display: none;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    padding: 5%;
+}
+
+#settings h2{
+    font-size: 25px;
+}
+#settings #details{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px ;
+    justify-content: space-between;
+}
+
+#settings a{
+    color:rgb(95, 95, 95);
+    font-weight: 5;
+}
+
+#Privacy h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#Privacy a{
+    margin: 20px;
+}
+
+#Privacy a:hover{
+    text-decoration: underline;
+}
+
+
+#edit{
+    display: none;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    padding: 5%;
+}
+
+#edit #username{
+    border-bottom:0px solid silver ;
+
+}
+#edit input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    margin-bottom: 0px;
+}
+
+#edit form{
+    margin: 0px 10% 0px 10%;
+    
+}
+
+#edit label{
+    display: flex;
+    margin-bottom: 5px;
+    color: rgb(109, 108, 108);
+    font-weight: 200;
+}
+#edit a{
+    color: red;
+}
+#edit h2{
+    margin-bottom:   50px ;
+    font-size: 25px;
+}
+#edit_btn{
+    cursor: pointer;
+}
+
+
+.error{
+    color: red;
+    font-size: 12px;
+    position:absolute;
+    font-weight: 900;
+    margin: 2px;
+
+}
+
+
+#send{
+    display: flex;
+    justify-content: end;
+    margin: 5px 5px 0px 0px;
+}
+#send #cancel{
+
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #1a1a1a;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+    transition: .4s;
+
+    
+}
+
+#send #cancel:hover{
+    transition: .4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+
+#send #save{
+    font-weight: bolder;
+    width: fit-content;
+
+}
+
+
+
+#pass_btn{
+    cursor: pointer;
+}
+#change_pass{
+    display: none;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    padding: 5%;
+}
+
+#change_pass form {
+    margin: 0px 10% 0px 10%;
+
+}
+
+#change_pass form input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+
+}
+
+#change_pass label{
+    display: flex;
+    margin-bottom: 5px;
+    color: rgb(109, 108, 108);
+    font-weight: 200;
+    margin-top: 30px;
+}
+#change_pass a{
+    color: red;
+    font-weight: 900;
+}
+
+#change_pass b{
+    margin-left:-55px ;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(109, 108, 108);
+    font-weight: 200;
+    
+
+}
+#change_pass b::selection{
+    background: transparent;
+}
+
+
+
+#change_pass h2{
+    margin-bottom:   50px ;
+    font-size: 25px;
+}
+
+#change_pass #cancel{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #1a1a1a;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+    transition: .4s;
+    display: flex;
+    width: fit-content;
+    
+}
+#change_pass #cancel:hover{
+    transition: .4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+#change_passbts #save_pass{
+    width: fit-content;
+
+}
+#change_passbts{
+    display: flex;
+    justify-content: end;
+    margin: 30px 0px 0px 10px;
+}
+
+.pass_error{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    font-weight: 900;
+    margin: 2px;
+
+}
+

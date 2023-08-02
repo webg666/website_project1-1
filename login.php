@@ -1,11 +1,12 @@
 <body>
 <?php
-error_reporting(E_ERROR | E_PARSE);
+
 session_start();
     include("connection.php");
     include("functions.php");
 
     $user_data=check_login($con);
+    
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;

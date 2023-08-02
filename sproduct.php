@@ -1,8 +1,11 @@
 <?php
-  session_start();
-  include("connection.php");
+error_reporting(E_ERROR | E_PARSE);
+session_start();
   include("connection.php");
   include("functions.php");
+
+
+
   $sql = "SELECT * FROM  products";
   $all_products = $con->query($sql);
   $all_products2 = $con->query($sql);
@@ -10,8 +13,13 @@
   {
         $id = $_GET["id"];
 
+
+
       
       }
+
+
+
 
 
      
@@ -65,42 +73,8 @@
           <input type="text"  placeholder="Search">
         </form>
         <a><i onclick="search()" id="searchbtn" class="gg-search"></i></a>
-        <a id="iconBag" class="icons" > <i id="dot" style="display: <?php echo $_SESSION['display']?>;" class="fa-solid fa-circle"></i> <i class="gg-shopping-bag" id="bag-ickon"></i></a>
-        <!--Cart-->
-        <div class="cart">
-          <h2 class="cart-title">Your Cart</h2>
-          <!--Content-->
-           <div class="cart-content">
-            <div class="cart-box">
-              <img src="img/2.png" alt="" class="cart-img">
-              <div class="detail-box">
-                <div class="cart-product-title">Aurora glasses</div>
-                <div class="cart-price">35$</div>
-                <input type="number" value="1" class="cart-quantity">
-              </div>
-
-              <!-------Remove Cart-->
-
-              <i class="gg-remove-r cart-remove"></i>
-
-            </div>
-           </div>
-
-           <!--Total-->
-           <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$35</div>
-           </div>
-
-           <!--Buy Button-->
-           <button type="button" class="btn-buy">Buy Now</button>
-
-           <!--Cart-Close-->
-           <i class="gg-close" id="close-cart"></i>
-
-  
-
-        </div>
+        <a id="iconBag" class="icons" > <i id="dot" class="fa-solid fa-circle"></i> <i class="gg-shopping-bag" id="bag-ickon"></i></a>
+        <?php show_cart($con); ?>
         <a id="iconProfile" class="icons"><i  onclick="poplogin()" class="gg-profile"></i></a>
         <div>
           <i id="menu-icon" class="gg-menu"></i>
@@ -424,7 +398,7 @@ if(!empty($id)){
             <div class="description">
               <p>The purposes of bonsai are primarily contemplation for the viewer, and the pleasant exercise of effort and ingenuity for the grower.</p>
             </div>
-            <button onclick="<?php  $_SESSION['display']='block'?>" class="add-to-cart">Add To Cart</button>
+              <button onclick="<?php echo $_SESSION['product_cart']=$id?>" class="add-to-cart">Add To Cart</button>
           </div>
 
       </div>
@@ -432,11 +406,17 @@ if(!empty($id)){
                   }
                   }
                   
+                  
           }else{
             echo "<h2 id='error'>No items found</h2>";
           }
         
           ?>
+
+</div>
+
+
+
 
       
       

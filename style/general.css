@@ -695,6 +695,8 @@ input[type="date"]{
     background: #f7fafb;
     box-shadow: -2px 0 4px rgb(15, 15, 27);
     transition: 0.3s ease-in;
+    z-index: 3;
+    
 
  }
  .cart.active{
@@ -714,6 +716,7 @@ input[type="date"]{
     align-items: center;
     gap: 1 rem;
     margin-top: 1rem;
+    
  }
  .cart-img{
     width: 100px;
@@ -775,6 +778,7 @@ input[type="date"]{
   font-size: 1.6rem;
   color: #000;
   cursor: pointer;
+  z-index: 4;
  }
 
  /*NOTIFICATION CART*/
@@ -791,6 +795,7 @@ input[type="date"]{
     z-index: 1;
     
 }
+
 
 
 

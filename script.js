@@ -13,7 +13,6 @@ window.addEventListener('load', clearStorage);
 
 
 
-
 let menu = document.querySelector('#menu-icon'); 
 let navbar = document.querySelector('.navmenu'); 
 menu.onclick = () => {
@@ -505,7 +504,7 @@ const search_products = () =>{
 
 let cartIcon = document.querySelector("#bag-ickon");
 let cart = document.querySelector('.cart');
-let closecart = document.querySelector('#close-cart');
+let closecart = document.querySelector("#close-cart");
 
 
 cartIcon.onclick = () => {
@@ -515,6 +514,9 @@ cartIcon.onclick = () => {
 closecart.onclick = () => {
     cart.classList.remove('active');
 };
+
+
+
 
 
 //Cart Working

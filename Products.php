@@ -2,6 +2,7 @@
   include("connection.php");
   $sql = "SELECT * FROM  products";
   $all_products = $con->query($sql);
+  
 ?>
 
 <!DOCTYPE html>
@@ -54,43 +55,11 @@
           <input type="text"  placeholder="Search">
         </div>
         <a><i onclick="search()" id="searchbtn" class="gg-search"></i></a>
-        <a id="iconBag" class="icons" ><i class="gg-shopping-bag" id="bag-ickon"></i></a>
+        <a id="iconBag" class="icons" > <i id="dot" class="fa-solid fa-circle"></i> <i class="gg-shopping-bag" id="bag-ickon"></i></a>
         <!--Cart-->
         <div class="cart">
-          <h2 class="cart-title">Your Cart</h2>
-          <!--Content-->
-           <div class="cart-content">
-            <div class="cart-box">
-              <img src="img/2.png" alt="" class="cart-img">
-              <div class="detail-box">
-                <div class="cart-product-title">Aurora glasses</div>
-                <div class="cart-price">35$</div>
-                <input type="number" value="1" class="cart-quantity">
-              </div>
-
-              <!-------Remove Cart-->
-
-              <i class="gg-trash-empty " id="cart-remove"></i>
-
-            </div>
-           </div>
-
-
-           <!--Total-->
-           <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$35</div>
-           </div>
-
-           <!--Buy Button-->
-           <button type="button" class="btn-buy">Buy Now</button>
-
-           <!--Cart-Close-->
-           <i class="gg-close" id="close-cart"></i>
-
-  
-
         </div>
+        <i class="gg-close" id="close-cart"></i>
 
         <a id="iconProfile" class="icons"><i  onclick="poplogin()" class="gg-profile"></i></a>
         <div  id="menu-icon">
@@ -488,6 +457,8 @@ else if(text=="true"){
   </div>
   
     <script src="script.js"></script>
+    <script src="cart.js"></script>
+
 
 </body>
 

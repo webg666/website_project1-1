@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
+
 session_start();
   include("connection.php");
   include("functions.php");
@@ -17,14 +17,8 @@ session_start();
 
       
       }
-
-
-
-
-
-     
-    
 ?>
+
 
 
 <!DOCTYPE html>
@@ -41,6 +35,8 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
   <!---ICONS-->
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css' rel='stylesheet'>
@@ -49,9 +45,12 @@ session_start();
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash-empty.css' rel='stylesheet'>
+
+
 </head>
 <body>
-    
+
 
     <!----------HEADER----->
     <div onclick="scrollUp()" id="scroll-up">
@@ -74,7 +73,16 @@ session_start();
         </form>
         <a><i onclick="search()" id="searchbtn" class="gg-search"></i></a>
         <a id="iconBag" class="icons" > <i id="dot" class="fa-solid fa-circle"></i> <i class="gg-shopping-bag" id="bag-ickon"></i></a>
-        <?php show_cart($con); ?>
+        <!--Cart-->
+        <div class="cart">
+        </div>
+        <i class="gg-close" id="close-cart" ></i>
+
+
+        
+
+
+
         <a id="iconProfile" class="icons"><i  onclick="poplogin()" class="gg-profile"></i></a>
         <div>
           <i id="menu-icon" class="gg-menu"></i>
@@ -83,14 +91,9 @@ session_start();
       
       </div>
     </header>
-    
 
-   
 
- 
 
-</section>
-   </div>
 <!--LOGIN----->
 <div class="fullscreen-container">
 <section id="login">
@@ -398,8 +401,9 @@ if(!empty($id)){
             <div class="description">
               <p>The purposes of bonsai are primarily contemplation for the viewer, and the pleasant exercise of effort and ingenuity for the grower.</p>
             </div>
-              <button onclick="<?php echo $_SESSION['product_cart']=$id?>" class="add-to-cart">Add To Cart</button>
+              <button onclick="addToCart(<?php echo $id ?>)" class="add-to-cart">Add To Cart</button>
           </div>
+
 
       </div>
       <?php 
@@ -414,7 +418,6 @@ if(!empty($id)){
           ?>
 
 </div>
-
 
 
 
@@ -520,6 +523,12 @@ if(!empty($id)){
     <script src="script.js">
 
     </script>
+        <script src="cart.js">
+
+</script>
+
+
+    
 
     
 

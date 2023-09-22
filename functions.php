@@ -1,5 +1,6 @@
 <?php
 
+
 function  random_num($lenght){
 
     $text="";
@@ -30,24 +31,6 @@ function check_login($con){
 
 }
 
-function check_cart($con){
-    
-
-
-    if(isset($_SESSION['product_cart'])){
-        
-        $id = $_SESSION["product_cart"];
-        $query="select * from products where product_id = '$id' limit 1";
-        $result=mysqli_query($con,$query);
-
-        if($result && mysqli_num_rows($result)>0)
-            {
-                $product_data = mysqli_fetch_assoc($result);
-                return $product_data;
-                
-            }
-        }
-    }
 
 
 
@@ -95,50 +78,5 @@ function delete_product($con){
 
 
 
-    function show_cart($con){
-
-
-
-        $product=check_cart($con);
-        
-    
-
-
-      echo  '<!--Cart-->
-        <div class="cart">
-          <h2 class="cart-title">Your Cart</h2>
-          <!--Content-->
-           <div class="cart-content">
-            <div class="cart-box">
-              <img src='.$product['product_image'].' alt="" class="cart-img">
-              <div class="detail-box">
-                <div class="cart-product-title">'.$product['product_name'].'</div>
-                <div class="cart-price">'.$product['price'].'</div>
-                <input type="number" value="1" class="cart-quantity">
-              </div>
-
-              <!-------Remove Cart-->
-
-              <i class="gg-remove-r cart-remove"></i>
-
-            </div>
-           </div>
-
-           <!--Total-->
-           <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$35</div>
-           </div>
-
-           <!--Buy Button-->
-           <button type="button" class="btn-buy">Buy Now</button>
-
-           <!--Cart-Close-->
-           <i class="gg-close" id="close-cart"></i>
-
   
-
-        </div>
-        ';
-    }
 ?>

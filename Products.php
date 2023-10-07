@@ -11,7 +11,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EnMor</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" >
     <link rel="stylesheet" href="style/Products.css">
     <link rel="stylesheet" href="style/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,6 @@
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/remove-r.css' rel='stylesheet'>
-  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash-empty.css' rel='stylesheet'>
 
    <!-----Fonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">

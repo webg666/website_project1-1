@@ -27,7 +27,8 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EnMor</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" >
     <link rel="stylesheet" href="style/sproduct.css">
     <link rel="stylesheet" href="style/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,49 +46,41 @@ session_start();
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css' rel='stylesheet'>
-  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash-empty.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/remove-r.css' rel='stylesheet'>
 
-
+    <!-----Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Baskerville&family=Monoton&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
     <!----------HEADER----->
-    <div onclick="scrollUp()" id="scroll-up">
-      <a><i  class="gg-chevron-up"></i></a>
-    </div> 
     <header id="header">
-      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-      <div>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+     
       <ul class="navmenu">
-       
-        <li><a href="index.html">Home </a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a class="active" href="Products.php">Products</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
-      </div>
 
       <div  class="nav-icon">
-        <form id="search_text" class="search">
+        <div id="search_text" class="search">
           <input type="text"  placeholder="Search">
-        </form>
+        </div>
         <a><i onclick="search()" id="searchbtn" class="gg-search"></i></a>
         <a id="iconBag" class="icons" > <i id="dot" class="fa-solid fa-circle"></i> <i class="gg-shopping-bag" id="bag-ickon"></i></a>
         <!--Cart-->
         <div class="cart">
         </div>
-        <i class="gg-close" id="close-cart" ></i>
-
-
-        
-
-
+        <i class="gg-close" id="close-cart"></i>
 
         <a id="iconProfile" class="icons"><i  onclick="poplogin()" class="gg-profile"></i></a>
-        <div>
-          <i id="menu-icon" class="gg-menu"></i>
+        <div  id="menu-icon">
+          <i  class="gg-menu"></i>
         </div>
-
       
       </div>
     </header>

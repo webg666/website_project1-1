@@ -65,13 +65,13 @@ function getCartHtml($all_products) {
                         $cartHtml .='<div class="detail-box">';
 
                         $cartHtml .='<div class="cart-product-title">'.$row['product_name'].'</div>';
-                        $cartHtml .='<div class="cart-price">'.$counts[$productId]*$row['price'].'</div>';
-                        $cartHtml .='<input type="number" value='.$counts[$productId].' min="1" max="10" class="cart-quantity">';
+                        $cartHtml .='<div class="cart-price">'.$counts[$productId]*$row['price'].' €</div>';
+                        $cartHtml .='<h4>('.$counts[$productId].')</h4>';
 
 
                         $cartHtml .='</div>';
 
-                        $cartHtml .='<i class="gg-trash-empty"  onclick="removeFromCart(' . $productId . ')" id="cart-remove"></i>';
+                        $cartHtml .='<i class="gg-remove-r"  onclick="removeFromCart(' . $productId . ')" id="cart-remove"></i>';
 
                         $cartHtml .='</div>';
                         

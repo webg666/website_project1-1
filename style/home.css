@@ -3,7 +3,7 @@
 
     font-size: 130%;
     font-family:Arial, Helvetica, sans-serif ;
-    background-image: url(../img/Hero-5.png);
+    background-image: url(../img/Main.jpg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -21,14 +21,14 @@
 
 #Hero h4{
   margin-bottom: 15px; 
-  color: rgb(95, 188, 85);
-  font-family: 'Libre Baskerville', serif;
+  color: rgb(0, 2, 0);
   font-size: 33px;
+  font-family: Kaisei HarunoUmi;
 
 }
 #Hero h2{
     font-family: 'Libre Baskerville', serif;
-    color: rgb(95, 188, 85);
+    color: rgb(1, 10, 0);
     font-size: 43px;
   
   }
@@ -49,63 +49,35 @@
     margin: 15px;
 }
 
-/****New Products**/
+/* Categories*/
 
-.row{
-    display: flex;
-    padding-left: 10%;
-    
+
+.title1 {
+  margin-top: 200px;
+  font-family: Kaisei HarunoUmi;
+  font-size: 30px;
+  text-align: center;
+  margin: 35px auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #000000;
+}
+.title1::after {
+  content: "";
+  background: #ff523b;
+  width: 260px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.colum {
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.4s;
-  }
-  .colum img {
-    width: 230px;
-    border-radius: 14%;
-    /* border: radius 20px; */
-  }
-  .title {
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-  }
-  .title::after {
-    content: "";
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  h4 {
-    color: #555;
-    font-weight: normal;
-  }
-  .colum p {
-    font-size: 17px;
-  }
-  .colum:hover {
-    transform: translateY(-30px);
-  }
-
-/* Categories*/
 #categories{
     display: flex;
     justify-content: center;
     gap: 200px;
-    margin: 5%;
-
    }
   
   
@@ -115,20 +87,142 @@
   
    .projetc-preiview-content h2 {
     text-align: center;
-    padding-left: 150px;
+    color: #000000;
+    font-family: Kaisei HarunoUmi;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
    }
 
-/* Banner*/
 
-#banner img{
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: 460px;
-   margin-top: 50px;
+/****New Products**/
+
+.row{
+  display: flex;
+  padding-left: 10%;
+  
+}
+
+.colum {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.4s;
+}
+.colum img {
+  width: 230px;
+  border-radius: 14%;
+  /* border: radius 20px; */
+}
+.title {
+  font-family: Kaisei HarunoUmi;
+  font-size: 30px;
+  text-align: center;
+  text-align: center;
+  margin: 50px auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #000000;
+}
+.title::after {
+  content: "";
+  background: #ff523b;
+  width: 160px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  font-family: Kaisei HarunoUmi;
+  color: #000000;
+  font-weight: normal;
+}
+.colum p {
+  font-size: 17px;
+}
+.colum:hover {
+  transform: translateY(-30px);
+}
+
+
+/*Why us*/
+
+
+#Why-Us{
+  height: 420px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+
+.container1 h2{
+  text-align: center;
+  font-size: 35px;
+  font-family: Kaisei HarunoUmi;
+  padding-top: 25px;
+}
+.info{
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
+ /*News-letter*/
+
+ #newsletter{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #985b45;
+  height: 250px;
+
+} 
+
+
+
+.newstext h2{
+  text-align: center;
+  font-family: Kaisei HarunoUmi;
+  font-size: 38px;
+  text-align: center;
+  font-weight:800 ;
+  padding-top: 20px;
+}
+.newstext p{
+
+  font-family: Kaisei HarunoUmi;
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 17px;
 
 }
 
+#newsletter input{
+  padding-left: 30px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+}
+.form {
+  width: 500px;
+  padding-bottom: 5%;
+  display: flex;
+   
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: box-shadow var(--duration-short) ease;
+}
 
 
 /*HOME-RESPONSIVE*/

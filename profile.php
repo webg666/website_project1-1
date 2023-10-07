@@ -21,7 +21,8 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EnMor</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" >
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/profile.css" >
 
@@ -38,6 +39,11 @@ session_start();
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css' rel='stylesheet'>
+
+    <!-----Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Baskerville&family=Monoton&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -64,39 +70,9 @@ session_start();
       <a id="iconBag" class="icons" ><i class="gg-shopping-bag" id="bag-ickon"></i></a>
       <!--Cart-->
       <div class="cart">
-        <h2 class="cart-title">Your Cart</h2>
-        <!--Content-->
-         <div class="cart-content">
-          <div class="cart-box">
-            <img src="img/2.png" alt="" class="cart-img">
-            <div class="detail-box">
-              <div class="cart-product-title">Aurora glasses</div>
-              <div class="cart-price">35$</div>
-              <input type="number" value="1" class="cart-quantity">
-            </div>
-
-            <!-------Remove Cart-->
-
-            <i class="gg-remove-r cart-remove"></i>
-
-          </div>
-         </div>
-
-         <!--Total-->
-         <div class="total">
-          <div class="total-title">Total</div>
-          <div class="total-price">$35</div>
-         </div>
-
-         <!--Buy Button-->
-         <button type="button" class="btn-buy">Buy Now</button>
-
-         <!--Cart-Close-->
-         <i class="gg-close" id="close-cart"></i>
-
-
-
       </div>
+               <!--Cart-Close-->
+               <i class="gg-close" id="close-cart"></i>
       <a id="iconProfile" class="icons"><i  onclick="poplogin()" class="gg-profile"></i></a>
       <div>
         <i id="menu-icon" class="gg-menu"></i>
@@ -440,6 +416,7 @@ session_start();
     </section>
     
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 
 </body>
 </html>

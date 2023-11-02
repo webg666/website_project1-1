@@ -1,14 +1,10 @@
-*{
-   
-    font-family: Kaisei HarunoUmi;
-    
-  } 
+
 
 /*About*/
 
 
 #About-banner{
-    background-image: url(../img/About_banner.png);
+    background-image: url(../img/banner/About_banner.png);
     width:100%;
     background-size: cover;
   
@@ -16,19 +12,20 @@
 #About-banner h1{
     text-align: center;
     font-size: 84px;
-    color: rgb(188, 148, 85);
-    padding: 3%;
-    font-weight: bolder;
+    color: var(--highmid);
+    padding-top: 8%;
+    padding-bottom: 10px;
     backdrop-filter: brightness(83%);
 }
 
  .Welcome {
     display: flex;
     justify-content:center;
-    padding: 20%;
+    padding: 10%;
  }
 
  .Welcome h2{
+    color: var(--dark);
     font-size: 31px;
     font-weight: 50;
  }
@@ -36,7 +33,7 @@
 
 
 section.card {
-    background: #f6f6f6;
+    background: var(--bright);
     border-radius: 24px 24px 24px 48px;
     padding: 48px 48px 48px 308px;
     margin: 64px 0;
@@ -47,7 +44,7 @@ section.card {
     flex-direction: row;
     align-self: flex-start;
     position: relative;
-    box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
+    box-shadow: 5px 0 0 0 rgba(200, 166, 153, 0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
 }
 section.card .text-content {
     display: flex;
@@ -60,12 +57,13 @@ section.card .text-content h3 {
     max-width: 20ch;
 }
 section.card .text-content p {
+    color: var(--dark);
     margin: 16px 0 24px;
     max-width: 36ch;
 }
 section.card .text-content a {
-    border: 3px solid #000;
-    color: #000;
+    border: 3px solid var(--dark);
+    color: var(--dark);
     align-self: flex-start;
     text-decoration: none;
     padding: 16px 32px;
@@ -111,22 +109,36 @@ article {
 
 
 .more{
-    padding-top: 16%;
+    background-image: url(../img/banner/sales.png);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
     position: relative;
     text-align: center;
+    background-color: #faf9f8;
+    margin-top: 5%;
+    border-bottom: 1px solid black;
+
 }
 
 .centered {
     position: absolute;
-    top: 75%;
+    top: 45%;
     left: 25%;
     transform: translate(-50%, -50%);
   }
-
-  .more img{
-    height: 600px;
-    width: 100%;
+  .centered h2{
+    color: var(--highmid);
+    width: 370px;
+    font-size: 20px;
+    padding: 20px 0;
   }
+  .centered h2 span{
+    color: #ff523b;
+    font-size: 33px;
+
+  }
+ 
 
 
 
@@ -156,6 +168,13 @@ article {
    }
 }
 @media all and (max-width: 720px) {
+
+
+    #About-banner{
+        background-image: url(../img/banner/About_banner_responsive.png);
+        width:100%;
+        background-size: cover;}
+      
    
     section.card {
         margin: 64px 0;
@@ -167,12 +186,15 @@ article {
         padding: 88px 36px 36px;
         border-radius: 24px;
    }
+
+
     section.card .text-content h3 {
-        max-width: calc(-50%);
-        font-size: 1em;
+        font-size: 20px;
+        width: 180px;
+        
    }
     section.card .text-content p, section.card .text-content a {
-        font-size: 0.8em;
+        font-size: 17px;
    }
     section.card .visual, section.card:nth-of-type(odd) .visual {
         width: 150px;
@@ -184,5 +206,27 @@ article {
         width: 100%;
         height: auto;
    }
+
+   .more{
+    margin-top: 35px;
+    background-image: url(../img/banner/sales_responsive.png);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered h2{
+    color: var(--highmid);
+    width: 370px;
+  }
+
 }
 

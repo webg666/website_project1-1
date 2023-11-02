@@ -1,5 +1,5 @@
 //responsive menu
-const  clearStorage = () =>  {
+/* const  clearStorage = () =>  {
     let session = sessionStorage.getItem('value');
     if (session == null) {
         localStorage.removeItem('text');
@@ -8,8 +8,7 @@ const  clearStorage = () =>  {
     sessionStorage.setItem('value', 1);
 }
 window.addEventListener('load', clearStorage);
-
-
+*/
 
 
 
@@ -19,13 +18,14 @@ menu.onclick = () => {
 
     navbar.classList.toggle('active');
     if(navbar.classList.contains('active')){
-        document.getElementById('blur').style.filter='blur(2px)';
         menu.className="gg-close";
+        
         
     }
     else{
-        document.getElementById('blur').style.filter='none';
         menu.className="gg-menu";
+
+
     
     }
 }
@@ -51,9 +51,10 @@ window.onclick=function()
         if (navbar.classList.contains('active')){
         
             navbar.classList.toggle('active');
-            document.getElementById('blur').style.filter='none';
             menu1.className="gg-menu";
+
         }
+
         if(search.classList.contains("search-active")){
             search.classList.remove("search-active")
             iconbag.classList.remove("icons-a")
@@ -120,11 +121,11 @@ function poplogin(){
     if (localStorage.getItem("text")!="login"){
         document.getElementById('signup').style.display='none';
         document.getElementById('login').style.display='block';
-        document.getElementById('header').style.position='static';
         document.getElementById("signup_password").type="password";
         document.getElementById("signup_pass").className = "fa-solid fa-eye";
         document.getElementById("login_password").type="password";
         document.getElementById("login_pass").className = "fa-solid fa-eye";
+        $(".fullscreen-container").fadeTo(200, 1);
         document.getElementById('signup_form').reset();
         document.body.style.overflow='hidden';
         window.scrollTo(0,0);
@@ -141,7 +142,6 @@ function poplogin(){
 function popsign(){
     document.getElementById('login').style.display='none';
     document.getElementById('signup').style.display='block';
-    document.getElementById('header').style.position='static';
     document.getElementById('login_form').reset();
     document.body.style.overflow='hidden';
     disableScroll()
@@ -606,12 +606,8 @@ function enableScroll() {
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
-$(function() {
-    $("#iconProfile").click(function() {
-      $(".fullscreen-container").fadeTo(200, 1);
-    });
-      
-  });
+
+
 
 /*loadings*/
 

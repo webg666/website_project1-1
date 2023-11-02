@@ -30,6 +30,9 @@
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/remove-r.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
    <!-----Fonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +50,7 @@
       <ul class="navmenu">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="Products.php">Products</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About us</a></li>
       </ul>
 
       <div  class="nav-icon">
@@ -343,116 +346,92 @@ else if(text=="true"){
 
 
  <!----Products----->
-<section class="shop container">
-  <div class="small-container">
-    <h2 class="title">Sun glasses</h2>
-
+ <div class="small-container">
     <div class="row">
-    <?php
-    
-  while($row = mysqli_fetch_assoc($all_products)){
-?>
+      <?php
+      
+        while($row = mysqli_fetch_assoc($all_products)){
+      ?>
 
-      <div class="colum">
-      <form action="sproduct.php" method="GET">
-        <button id="product_btn" name="id" value="<?php echo $row["product_id"]?>">
-        <a><img src="<?php echo $row["product_image"]?>" alt=""></a>
-        <h4><?php echo $row["product_name"]?></h4>
-        <p>$<?php echo $row["price"]?></p>
-        </button>
-        </form>
-      </div>
-
-
-      <?php } ?>
+            <div class="colum">
+              <form action="sproduct.php" method="GET">
+                <button id="product_btn" name="id" value="<?php echo $row["product_id"]?>">
+                  <div class="box">
+                    <a><img src="<?php echo $row["product_image"]?>" alt=""></a>
+                  </div>
+                  <div class="text_pr">
+                    <h4><?php echo $row["product_name"]?></h4>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                    <p>$<?php echo $row["price"]?></p>
+                </button>
+              </form>
+            </div>
+        <?php } ?>
     </div>
+ </div>
 
 
 
+
+  <div class="row">
+        <div class="colum">
+          <div class="box">
+            <a href="sproduct.html"><img src="img/1.png" alt=""></a>
+          </div>
+          <div class="text_pr">
+            <h4>Aurora s\Sunglases</h4>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+            <p>$50.00</p> 
+        </div>
   </div>
 
-  </section>
+<!--Footer-->
+<footer class="section-p1">
+          <div class="col">
+            <h2>Contact</h2>
+            <div class="contact">
+              <h4><span>Address:</span> 563 Wellington Road</h4>
+              <h4><span>Phone:</span> +01 2222 365</h4>
+              <h4><span>Hours:</span> 10:00 - 18:00, Mon - Sat</h4>
+            </div>
 
+            <div class="follow">
+              <p>Follow us</p>
+              <div class="icon">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-brands fa-tiktok"></a>                
+                <a href="#" class="fa fa-youtube"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h2>About</h2>
+            <div class="space">
+              <a href="about.html">About us</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Contact us</a>
+            </div>
+          </div>
+          <div class="col">
+            <h2>My acount</h2>
+            <div class="space">
+            <a onclick="poplogin()" style="cursor: pointer;">Sign in</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+            </div>
+          </div>
+          <div class="col">
+            <p>Secured Payment Gatewayes</p>
+            <img src="img/pay/pay.png" alt="">
+          </div>
+  </footer>
+    <p id="copurights">&copy; 2023 EnMor. All rights reserved.</p>
 
-   
-
-
-
-
-  <!---Pages---->
-
-  <section id="pages" class="section-p1">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#"><i class="gg-arrow-right"></i></a>
-         
-  </section>
-
-
- 
-
-             <!--Footer-->
- <footer class="section-p1">
-  <div class="col">
-  <h2>PAGES</h4>
-   <a href=""><h4>Home</h4></a> 
-   <a href=""><h4>Shop</h4></a> 
-   <a href=""><h4>About us</h4></a> 
-   
-  </div>
-  <div class="col">
-      <h2>CONTACT</h4>
-          <a href=""><h4>Address</h4></a> 
-          <a href=""><h4>Phone</h4></a> 
-          <a href=""><h4>Email</h4></a> 
-  </div>
-  <div class="col">
-      <h2>MY ACOUNT</h4>
-          <a href=""><h4>Sign in</h4></a> 
-          <a href=""><h4>My wishlist</h4></a> 
-          <a href=""><h4>Help</h4></a> 
-  </div>
-
-  <div class="wrapper">
-      <div class="wrapper__links">
-
-      <a class="social-link social-link--tiktok" id="tiktok">
-        <svg class="social-svg"  viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <title>
-            Tiktok
-          </title>
-          <g class="social-group" fill="none" fill-rule="evenodd">
-            <circle class="social-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
-            <circle class="social-group__inner-circle" fill="#2D76B0" cx="300" cy="300" r="252.5" />
-            <path class="social-group__icon" d="M224 68a44.05 44.05 0 0 1-44-44a12 12 0 0 0-12-12h-40a12 12 0 0 0-12 12v132a16 16 0 1 1-22.85-14.47a12 12 0 0 0 6.85-10.84V88a12 12 0 0 0-14.1-11.81a79.35 79.35 0 0 0-47.08 27.74A81.84 81.84 0 0 0 20 156a80 80 0 0 0 160 0v-33.33a107.47 107.47 0 0 0 44 9.33a12 12 0 0 0 12-12V80a12 12 0 0 0-12-12Zm-12 39.15a83.05 83.05 0 0 1-37-14.91a12 12 0 0 0-19 9.76v54a56 56 0 0 1-112 0a57.86 57.86 0 0 1 32-51.56V124a40 40 0 1 0 64 32V36h17.06A68.21 68.21 0 0 0 212 90.94Z"
-              fill="#000" fill-rule="nonzero"  />
-          </g>
-        </svg>
-      </a>
-      <a class="social-link social-link--instagram" id="instagram">
-        <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <title>
-            instagram
-          </title>
-          <defs>
-            <linearGradient x1="0%" y1="100%" y2="0%" id="simpleInsta">
-              <stop stop-color="#D72F3F" offset="0%" />
-              <stop stop-color="#4221B9" offset="100%" />
-            </linearGradient>
-          </defs>
-          <g class="social-group" fill="none" fill-rule="evenodd">
-            <circle class="social-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
-            <circle class="social-group__inner-circle social-group__inner-circle--instagram" fill="url(#simpleInsta)" cx="300" cy="300"
-              r="252.5" />
-            <path class="social-group__icon" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"
-              fill="#FFF" fill-rule="nonzero" />
-          </g>
-        </svg>
-      </a>
-      </div>
-    </div>
- 
-</footer>
   </div>
   </div>
   

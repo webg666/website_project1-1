@@ -15,12 +15,10 @@ session_start();
             if($admin_email=="webg333@gmail.com" && $admin_password=="123pontikos"){
                 $_SESSION['admin']=true;
                 header("location:admin_page.php");
-                
-                echo "kot1";
+
 
             }else{
                 $_SESSION['admin']=false;
-                echo "kot2";
             }
 
        }

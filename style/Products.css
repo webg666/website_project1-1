@@ -1,3 +1,4 @@
+
 /*-----------------SHOP PAGE--------------------*/
 #shop-banner{
     background-image: url(../img/banner/Shop_banner.png);
@@ -9,6 +10,8 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
+    margin: 0px auto 80px;
+
   
   
   }
@@ -17,27 +20,6 @@
 /****New Products**/
 
 
-.title {
-  font-family: Kaisei HarunoUmi;
-  font-size: 30px;
-  text-align: center;
-  text-align: center;
-  margin: 50px auto 80px;
-  position: relative;
-  line-height: 60px;
-  color: #000000;
-}
-.title::after {
-  content: "";
-  background: #ff523b;
-  width: 160px;
-  height: 5px;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 h4 {
   font-family: Kaisei HarunoUmi;
@@ -57,7 +39,7 @@ h4 {
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
-  gap: 0 8%;
+  gap: 1%;
   margin:0  2% 5%;
 
 
@@ -102,8 +84,9 @@ h4 {
   /* border: radius 20px; */
 }
 
-button{
+.colum button{
   background-color: transparent !important ;
+  padding: 0 ;
 }
 
 

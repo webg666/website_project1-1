@@ -359,33 +359,18 @@ else if(text=="true"){
                   <div class="box">
                     <a><img src="<?php echo $row["product_image"]?>" alt=""></a>
                   </div>
+                </button>
                   <div class="text_pr">
                     <h4><?php echo $row["product_name"]?></h4>
                     <i class="fa-regular fa-heart"></i>
                   </div>
                     <p>$<?php echo $row["price"]?></p>
-                </button>
               </form>
             </div>
         <?php } ?>
     </div>
  </div>
 
-
-
-
-  <div class="row">
-        <div class="colum">
-          <div class="box">
-            <a href="sproduct.html"><img src="img/1.png" alt=""></a>
-          </div>
-          <div class="text_pr">
-            <h4>Aurora s\Sunglases</h4>
-            <i class="fa-regular fa-heart"></i>
-          </div>
-            <p>$50.00</p> 
-        </div>
-  </div>
 
 <!--Footer-->
 <footer class="section-p1">
